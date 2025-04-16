@@ -47,7 +47,3 @@ npm tauri dev
 ```bash
 npm tauri build
 ```
-
-## Лицензия
-
-MIT
