@@ -9,7 +9,6 @@ function App() {
         <h1>ReaderAI</h1>
         <p>Интеллектуальное чтение и управление заметками</p>
       </header>
-
       <main>
         {!file ? (
           <div className="welcome">

@@ -57,3 +57,49 @@ dist-ssr
 /.next/
 /out/
 next-env.d.ts
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# yarn v2
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+
+# npm cache
+npm-debug.log*
+
+# Tauri
+/src-tauri/target
+/src-tauri/icons/icon.icns
+/src-tauri/icons/icon.ico
+
+# production
+/build
+/dist
+/.next/
+/out/
+
+# misc
+.DS_Store
+*.pem
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# IDE
+.idea
+.vscode

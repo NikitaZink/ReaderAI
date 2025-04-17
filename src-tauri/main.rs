@@ -93,14 +93,6 @@ fn main() {
             // Получаем главное окно, которое создано автоматически из tauri.conf.json
             let main_window = app.get_window("main").expect("Не удалось получить главное окно");
             
-            // Внедряем CSS для скругления и JavaScript для кастомного заголовка
-            main_window.eval(&format!(
-                "const style = document.createElement('style'); style.textContent = `{}`; document.head.appendChild(style);",
-                WINDOW_STYLES
-            )).expect("Не удалось внедрить CSS");
-            
-            main_window.eval(TITLEBAR_SCRIPT).expect("Не удалось внедрить скрипт заголовка");
-            
             // Применяем тени и эффекты в зависимости от платформы
             #[cfg(target_os = "windows")]
             set_shadow(&main_window, true).expect("Ошибка при применении теней к окну");
