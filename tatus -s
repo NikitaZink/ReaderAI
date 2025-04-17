@@ -1,0 +1,8 @@
+warning: in the working copy of 'src-tauri/Cargo.lock', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src-tauri/Cargo.toml', LF will be replaced by CRLF the next time Git touches it
+src-tauri/Cargo.lock
+src-tauri/Cargo.toml
+src-tauri/main.rs
+src-tauri/src/main.rs
+src-tauri/tauri.conf.json
+styles/globals.css

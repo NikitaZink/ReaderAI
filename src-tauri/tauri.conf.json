@@ -10,6 +10,21 @@
     "version": "0.1.0"
   },
   "tauri": {
+    "windows": [
+      {
+        "label": "main",
+        "title": "ReaderAI",
+        "width": 1200,
+        "height": 800,
+        "minWidth": 800,
+        "minHeight": 600,
+        "center": true,
+        "decorations": false,
+        "transparent": true,
+        "fullscreen": false,
+        "resizable": true
+      }
+    ],
     "allowlist": {
       "notification": {
         "all": true
@@ -20,7 +35,8 @@
         "scope": ["https://api.openai.com/*", "https://**"]
       },
       "window": {
-        "all": true
+        "all": true,
+        "startDragging": true
       },
       "fs": {
         "all": true,
